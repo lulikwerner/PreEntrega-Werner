@@ -47,6 +47,7 @@ do{
              
              /*Calcula el TDEE*/   
              var energy=TDEE(metabolic, lifestyle)
+             console.log( 'El TDEE es ' + energy);
              alert('Su TDEE es ' + energy)
             
              /*Calcula el TDCI*/  
@@ -57,14 +58,14 @@ do{
              }
             
              var calorieIntake= TDCI(energy, heightSelector, weight)
+             console.log( 'El TDCI es ' + calorieIntake);
              alert('Su TDCI es ' + calorieIntake);
             }
-            break;
-        }while(heightSelector != "P" || heightSelector != "p" || heightSelector != "ME"  || heightSelector != "me" || heightSelector != "Me" || heightSelector != "mE");  
+        }while(heightSelector != "P" && heightSelector != "p" && heightSelector != "ME"  && heightSelector != "me" && heightSelector != "Me" && heightSelector != "mE");  
 
 }
 
-}while(gender != 'M' || gender != 'm' || gender != 'F' || gender !='f');
+}while(gender != 'M' && gender != 'm' && gender != 'F' && gender !='f');
 
 
  
